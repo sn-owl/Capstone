@@ -17,10 +17,10 @@ const Layout = styled.div`
   flex-direction: column;
 `;
 
-const Main = ({props}) => {
+const Main = ({ props, isHome }) => {
   return (
     <Container>
-      <Header />
+      <Header isHome={isHome} /> {/* isHome prop 전달 */}
       <Layout>{props}</Layout>
       <Footer />
     </Container>
