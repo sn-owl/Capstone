@@ -23,10 +23,6 @@ import {
 
 const Frame3Bottom = styled.div`
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 `;
 
@@ -35,8 +31,6 @@ const DivideLineBox = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 `;
 
 const DivideLine = styled.div`
@@ -47,24 +41,15 @@ const DivideLine = styled.div`
 
 const OrText = styled.div`
   margin: 0 10px; /* 텍스트 좌우 여백 */
-  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
   font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 400;
-  text-transform: uppercase; /* 대문자로 변환 */
 `;
 
 // 이미지+텍스트 버튼
 const ImageDiv = styled.div`
   justify-content: space-between; /* 가로 중앙 정렬 */
-  width: 100%;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  margin-top: 1rem;
   padding-left: 4rem;
   padding-right: 5rem;
-  gap: 0.5rem;
   border-radius: 12px;
   display: flex;
   background-color: ${(props) => props.bgcolor || "#63b26d"};
@@ -73,13 +58,9 @@ const ImageDiv = styled.div`
 `;
 
 const ButtonText = styled.p`
-  display: flex; /* flexbox 사용 */
-  flex-direction: row; /* 가로 정렬 */
+  display: flex; /* 상하조절? */
   align-items: center; /* 수직 중앙 정렬 */
-  justify-content: center; /* 가로 중앙 정렬 */
   color: ${(props) => props.textcolor || "rgb(255 255 255)"}; /* 텍스트 색상 */
-  font-size: 1rem; /* 텍스트 크기 */
-  margin: 0;
   font-weight: bold; /* 텍스트 굵기 증가 */
 `;
 
