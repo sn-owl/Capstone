@@ -36,4 +36,6 @@ const Test = () => {
     )
 }
 
+`깃허브테스트`
+
 export default Test;
